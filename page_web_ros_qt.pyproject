@@ -1,0 +1,10 @@
+{
+    "files": [
+        "package.xml",
+        "page_web_ros_qt/mainwindow.py",
+        "page_web_ros_qt/mainwindow.ui",
+        "resource/page_web_ros_qt",
+        "setup.cfg",
+        "setup.py"
+    ]
+}
