@@ -1,7 +1,7 @@
 # page_web_ros_qt
 Simple publisher ros2 avec qt
 
-Avec la particularité de normalement communiquer avec un sub qui lieu recopie ce qu'il reçoit sur une page web :
+Avec la particularité de normalement communiquer avec un sub qui recopie ce qu'il reçoit sur une page web :
 
 ```
 https://github.com/anasdtp/pg_web_ros
