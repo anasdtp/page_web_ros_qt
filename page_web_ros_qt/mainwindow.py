@@ -1,6 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_mainwindow import Ui_MainWindow
+from .ui_mainwindow import Ui_MainWindow
 
 import rclpy
 from rclpy.node import Node
@@ -38,16 +38,16 @@ class MainWindow(QMainWindow):
         event.accept()
 
 def run_ros_node():
-   rclpy.init()
    ros_node = MinimalPublisher()
    rclpy.spin(ros_node)
    rclpy.shutdown()
 
-def main():
+def main(args=None):
     app = QApplication([])
     # run_ros_node()
-    ros_thread = Thread(target=run_ros_node)
-    ros_thread.start()
+    rclpy.init(args=args)
+    # ros_thread = Thread(target=run_ros_node)
+    # ros_thread.start()
 
 
     window = MainWindow()

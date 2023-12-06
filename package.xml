@@ -3,21 +3,14 @@
 <package format="3">
   <name>page_web_ros_qt</name>
   <version>0.0.0</version>
-  <description>ROS 2 Python package for pubsub functionality</description>  <!-- Ajoutez une description appropriée ici -->
+  <description>ROS 2 Python package for pubsub functionality</description>
   <maintainer email="mohamed-anas.daggag@universite-paris-saclay.fr">anas</maintainer>
-  <license>Apache License 2.0</license>  <!-- Ajoutez la déclaration de licence appropriée -->
-  
-  <!-- Ajoutez ces lignes pour spécifier les dépendances de test -->
-  <test_depend>ament_copyright</test_depend>
-  <test_depend>ament_flake8</test_depend>
-  <test_depend>ament_pep257</test_depend>
-  <test_depend>python3-pytest</test_depend>
+  <license>Apache License 2.0</license>
 
-  <!-- Ajoutez ces lignes pour spécifier les dépendances d'exécution -->
-  <build_depend>qtbase5-dev</build_depend>
-   <build_depend>qt5-qmake</build_depend>
+  <build_export_depend>qtbase5-dev</build_export_depend>
+  <build_export_depend>qt5-qmake</build_export_depend>
 
- <exec_depend>libqt5-core</exec_depend>
+  <exec_depend>libqt5-core</exec_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
 
